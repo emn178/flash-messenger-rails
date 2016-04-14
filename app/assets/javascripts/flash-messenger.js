@@ -3,7 +3,7 @@
   'use strict';
 
   window.flash.show = function (jobs) {
-    $(document).on('ready page:load', function () {
+    var show = function () {
       jobs.forEach(function (job) {
         var message = job[0];
         var options = job[1];
@@ -11,7 +11,9 @@
         method = method && flash[method] ? flash[method] : flash;
         method(message, options);
       });
-    });
+      $(document).off('ready page:load', show);
+    };
+    $(document).on('ready page:load', show);
   };
 
   window.flash.modelError = function (errors, options) {

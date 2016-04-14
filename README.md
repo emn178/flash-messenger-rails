@@ -3,7 +3,7 @@
 [![Build Status](https://api.travis-ci.org/emn178/flash-messenger-rails.png)](https://travis-ci.org/emn178/flash-messenger-rails)
 [![Coverage Status](https://coveralls.io/repos/emn178/flash-messenger-rails/badge.svg?branch=master)](https://coveralls.io/r/emn178/flash-messenger-rails?branch=master)
 
-Integrate with [flash-messenger](https://github.com/emn178/flash-messenger)) to provide a simple flash messages. 
+Integrate with [flash-messenger](https://github.com/emn178/flash-messenger) to provide a simple flash messages. 
 
 ## Installation
 
@@ -49,7 +49,7 @@ redirect_to root_path
 ```
 
 ### Helpers
-In controller, you can use helper methods to output flash messages directly:
+In controller, you can use helper methods to output flash messages:
 ```ruby
 flash_message('Successful!')
 flash_message('Error!', :type => :error)
