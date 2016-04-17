@@ -20,7 +20,7 @@ module FlashMessenger
 
     def flash_model_error(errors, options = nil)
       errors = errors.errors if errors.is_a? ActiveRecord::Base
-      push_flash(errors.to_h, options, 'modelError')
+      push_flash(errors.as_json, options, 'modelError')
     end
   end
 end
