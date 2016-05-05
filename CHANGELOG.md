@@ -1,3 +1,7 @@
+# v0.1.3 / 2016-05-05
+
+Added all helpers to view
+
 # v0.1.2 / 2016-05-02
 
 Update flash-messenger to 0.1.1

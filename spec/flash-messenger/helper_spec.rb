@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-describe FlashMessenger::ControllerHelper do
-  include FlashMessenger::ControllerHelper
+describe FlashMessenger::Helper do
+  include FlashMessenger::Helper
 
   describe "#flash_message" do
     subject { flash_messenger }

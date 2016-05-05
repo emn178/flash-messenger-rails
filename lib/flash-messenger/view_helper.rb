@@ -1,3 +1,5 @@
+require "flash-messenger/helper"
+
 module FlashMessenger
   module ViewHelper
     include FlashMessenger::Helper

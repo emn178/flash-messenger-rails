@@ -6,7 +6,7 @@ if defined?(::Rails::Engine)
           include FlashMessenger::ViewHelper
         end
         ActiveSupport.on_load(:action_controller) do
-          include FlashMessenger::ControllerHelper
+          include FlashMessenger::Helper
         end
       end
     end

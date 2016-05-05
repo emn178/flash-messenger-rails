@@ -2,7 +2,6 @@ require 'spec_helper'
 
 describe FlashMessenger::ViewHelper do
   include FlashMessenger::ViewHelper
-  include FlashMessenger::ControllerHelper
   include ActionView::Helpers::AssetTagHelper
   include ActionView::Helpers::JavaScriptHelper
 
