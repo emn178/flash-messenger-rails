@@ -72,7 +72,7 @@ describe FlashMessenger::Helper do
         article.invalid?
         flash_model_error(article.errors) 
       }
-      it { should eq [[{:title=>["can't be blank"]}, nil, "modelError"]] }
+      it { should eq [["Title can't be blank", nil, "error"]] }
     end
 
     context "when input model" do
@@ -80,7 +80,7 @@ describe FlashMessenger::Helper do
         article.invalid?
         flash_model_error(article) 
       }
-      it { should eq [[{:title=>["can't be blank"]}, nil, "modelError"]] }
+      it { should eq [["Title can't be blank", nil, "error"]] }
     end
   end
 end

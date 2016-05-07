@@ -32,7 +32,9 @@ Add the following to /app/assets/javascripts/application.js:
 ### Require CSS
 Add the following to /app/assets/stylesheets/application.css:
 ```
+/*
  *= require flash-messenger
+ */
 ```
 
 ### Render
@@ -59,7 +61,7 @@ flash_error('Error!')
 ```
 You can also use it to show model errors:
 ```ruby
-flash_model_error(@model)
+flash_model_error(model)
 ```
 
 ### Bootstrap
@@ -69,7 +71,9 @@ If you want to use bootstrap style, add the following to js file:
 ```
 Add the following to css file:
 ```
+/*
  *= require flash-messenger-bootstrap
+ */
 ```
 
 ### Turboboost

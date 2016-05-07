@@ -1,3 +1,7 @@
+# v0.1.4 / 2016-05-07
+
+Enabled I18n to flash_model_error
+
 # v0.1.3 / 2016-05-05
 
 Added all helpers to view

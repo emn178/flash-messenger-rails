@@ -15,15 +15,4 @@
     };
     $(document).on('ready page:load', show);
   };
-
-  window.flash.modelError = function (errors, options) {
-    options = options || {};
-    options.type = 'error';
-    for (var key in errors) {
-      var messages = errors[key];
-      messages.forEach(function (message) {
-        flash(key + ' ' + message, options);
-      });
-    }
-  };
 })(jQuery);
