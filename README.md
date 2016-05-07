@@ -49,6 +49,10 @@ redirect_to root_path, :flash => {:error => 'Error!'}
 flash[:error] = 'Error!'
 redirect_to root_path
 ```
+In default it only shows `:success, :notice, :alert, :error` in flash. You can specify by this:
+```
+<%=show_flash :warning &>
+```
 
 ### Helpers
 In controller, you can use helper methods to output flash messages:

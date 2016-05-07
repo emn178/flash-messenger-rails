@@ -1,3 +1,7 @@
+# v0.1.5 / 2016-05-07
+
+Specified show_flash types.
+
 # v0.1.4 / 2016-05-07
 
 Enabled I18n to flash_model_error
