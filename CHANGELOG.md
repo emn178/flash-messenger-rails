@@ -1,3 +1,7 @@
+# v0.2.0 / 2019-05-06
+
+Upgrade to support turbolinks 5+.
+
 # v0.1.5 / 2016-05-07
 
 Specified show_flash types.
