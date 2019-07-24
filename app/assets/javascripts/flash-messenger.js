@@ -11,8 +11,9 @@
         method = method && flash[method] ? flash[method] : flash;
         method(message, options);
       });
-      $(document).off('ready page:load', show);
+      jobs = [];
+      $(document).off('page:load turbolinks:load', show);
     };
-    $(document).on('ready page:load', show);
+    $(document).ready(show).on('page:load turbolinks:load', show);
   };
 })(jQuery);
